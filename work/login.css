@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+form{
+    width:500px;
+    border:2px solid #ccc;
+    padding:30px;
+    background:#fff;
+    border-radius:15px;
+}
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+body{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    background: #1690A7;
+}
+input{
+    border:2px solid #ccc;
+    height:35px;
+    padding:10px;
+    width:95%;
+    display:block;
+    margin:10px auto;
+    border-radius:5px;
+}
+button{
+    height:35px;
+    margin-right:5px; 
+    border-radius:5px;
+    color:skyblue;
+    padding:10px 15px;
+    background-color:#333;
+    border:none;
+}
+button:hover{
+   opacity:.7;
+
+}
+
+.container.rememberme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container.rememberme.input{
+    margin: 0;
+    margin-right: 7px;
+    width: auto;
+    float: right;
+    color: #0b1612;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px #49c628a6;
+    background-image: linear-gradient(135deg, #70F570 60%, #39f20a 100%);
+}
+
+label{
+    display: block;
+    position: relative;
+    margin-left: 30px;
+}
+label::before {
+    content: ' \f00c';
+    position: absolute;
+    font-family: FontAwesome;
+    background: transparent;
+    border: 3px solid #3d17e6;
+    border-radius: 4px;
+    color: transparent;
+    left: -20px;
+    transition: all 0.2s linear;
+  }
+  
+  label:hover::before {
+    font-family: FontAwesome;
+    content: ' \f00c';
+    color: #fff;
+    cursor: pointer;
+    background: #70F570;
+  }
+  
+  label:hover::before .text-checkbox {
+    background: #70F570;
+  }
+  
+  label span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  
+  label input[type="checkbox"] {
+    display: none;
+  }
